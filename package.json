@@ -1,0 +1,12 @@
+{
+  "name": "llm4ship",
+  "version": "1.0.1",
+  "private": true,
+  "description": "LLM4Ship: a standalone Pi-agent skill for exploratory ship hull generation, model-scale resistance prediction and TD3 hull exploration.",
+  "keywords": ["pi-package", "ship-design", "hull-design"],
+  "pi": {
+    "skills": [
+      "./SKILL.md"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "release": "1.0.1",
+  "checked_at_utc": "2026-10-21T01:35:51.089921+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "tests_run": 74,
+  "passed": 72,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_actions_match_sb3_policy_loaded_from_same_real_checkpoint (test_actor_compatibility.SavedActorCompatibility.test_actions_match_sb3_policy_loaded_from_same_real_checkpoint)",
+      "reason": "PyTorch and Stable-Baselines3 are needed for the real actor comparison"
+    },
+    {
+      "test": "test_windows_launcher_preserves_arguments_and_callers_cwd (test_bootstrap.BootstrapTests.test_windows_launcher_preserves_arguments_and_callers_cwd)",
+      "reason": "Windows native launcher is checked on the target machine."
+    }
+  ],
+  "versions": {
+    "numpy": "2.3.5",
+    "torch": "not installed",
+    "matplotlib": "3.10.8",
+    "plotly": "not installed",
+    "stable-baselines3": "not installed",
+    "gymnasium": "not installed"
+  },
+  "gpu_inference": "not_run",
+  "windows_native_execution": "not_run",
+  "real_model_inference_this_revision": "not_run"
+}

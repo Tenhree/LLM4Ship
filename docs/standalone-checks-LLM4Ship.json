@@ -1,0 +1,734 @@
+{
+  "checked_on": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "source_archive": "WhutOceanShip-Skills-v1.0.1.zip",
+  "standalone_name": "LLM4Ship",
+  "real_model_inference": "not_run",
+  "single_skill_registration": "passed",
+  "application_preservation": {
+    "byte_identical_files": [
+      "scripts/hull_explore.py",
+      "scripts/hullexplore/__init__.py",
+      "scripts/hullexplore/contracts.py",
+      "scripts/hullexplore/geometry.py",
+      "scripts/hullexplore/workflow.py"
+    ],
+    "root_or_identity_only_changes": [
+      "models.py",
+      "cli.py"
+    ]
+  },
+  "unchanged_vendor_files": [
+    "vendor/Generator/Test_Supercarrier.py",
+    "vendor/Generator/buildship.py",
+    "vendor/Generator/config.py",
+    "vendor/Generator/datasets.py",
+    "vendor/Generator/losses.py",
+    "vendor/Generator/models.py",
+    "vendor/Generator/stage2_final.pth",
+    "vendor/Generator/train_stage1.py",
+    "vendor/Generator/train_stage2.py",
+    "vendor/Generator/trainers.py",
+    "vendor/Generator/utils.py",
+    "vendor/Hull_RL_Optimization/check_setup.py",
+    "vendor/Hull_RL_Optimization/configs/designs_template.csv",
+    "vendor/Hull_RL_Optimization/configs/train_config.json",
+    "vendor/Hull_RL_Optimization/hull_rl/__init__.py",
+    "vendor/Hull_RL_Optimization/hull_rl/backends.py",
+    "vendor/Hull_RL_Optimization/hull_rl/environment.py",
+    "vendor/Hull_RL_Optimization/hull_rl/inference.py",
+    "vendor/Hull_RL_Optimization/hull_rl/io_utils.py",
+    "vendor/Hull_RL_Optimization/hull_rl/settings.py",
+    "vendor/Hull_RL_Optimization/hull_rl/source_loader.py",
+    "vendor/Hull_RL_Optimization/hull_rl/training.py",
+    "vendor/Hull_RL_Optimization/hull_rl/trajectory.py",
+    "vendor/Hull_RL_Optimization/infer_ship.py",
+    "vendor/Hull_RL_Optimization/runs/td3/models/td3_final.zip",
+    "vendor/Hull_RL_Optimization/runs/td3/provenance.json",
+    "vendor/Hull_RL_Optimization/runs/td3/resolved_config.json",
+    "vendor/Hull_RL_Optimization/runs/td3/tensorboard/td3_1/events.out.tfevents.1787817723.autodl-container-a54d4c9bab-2c26b0c9.13908.0",
+    "vendor/Hull_RL_Optimization/runs/td3/training_status.json",
+    "vendor/Hull_RL_Optimization/train_td3.py",
+    "vendor/Predictor/Branchmark/ship1.csv",
+    "vendor/Predictor/cases1.csv",
+    "vendor/Predictor/hull_resistance_prediction.py",
+    "vendor/Predictor/infer_resistance.py",
+    "vendor/Predictor/prediction_best.pth"
+  ],
+  "checkpoint_integrity": [
+    {
+      "path": "vendor/Generator/stage2_final.pth",
+      "bytes": 131772656,
+      "sha256": "a7a42209dae1c580aea4a9b29b96edcd28265aeaad84b12321fc3b0bcd6d81d3",
+      "verified": true
+    },
+    {
+      "path": "vendor/Predictor/prediction_best.pth",
+      "bytes": 317996242,
+      "sha256": "729d14baa36b0372aff228c130c2cb600e12a8cf1435eb244e89fbc18a0feeb5",
+      "verified": true
+    },
+    {
+      "path": "vendor/Hull_RL_Optimization/runs/td3/models/td3_final.zip",
+      "bytes": 3402953,
+      "sha256": "d776176d07df4e4c6eddd689a5f3b7fa0a537f3aba9f4afbb9359610b0c137d7",
+      "verified": true
+    }
+  ],
+  "unchanged_environment_and_launcher_files": [
+    "models-manifest.json",
+    "run.cmd",
+    "run.sh",
+    "environment/runtime-spec.json",
+    "environment/requirements-runtime.txt",
+    "environment/constraints.txt",
+    "environment/original-windows.yml",
+    "environment/miniforge-release.txt",
+    "environment/doctor.py"
+  ],
+  "source_file_mapping": [
+    {
+      "source": "run.sh",
+      "destination": "run.sh"
+    },
+    {
+      "source": "README.md",
+      "destination": "README.md"
+    },
+    {
+      "source": "run.cmd",
+      "destination": "run.cmd"
+    },
+    {
+      "source": "SKILL.md",
+      "destination": "docs/collection-router-v1.0.1.txt"
+    },
+    {
+      "source": "models-manifest.json",
+      "destination": "models-manifest.json"
+    },
+    {
+      "source": "package.json",
+      "destination": "package.json"
+    },
+    {
+      "source": "examples/generate.json",
+      "destination": "examples/generate.json"
+    },
+    {
+      "source": "examples/optimize.json",
+      "destination": "examples/optimize.json"
+    },
+    {
+      "source": "examples/predict_benchmark.json",
+      "destination": "examples/predict_benchmark.json"
+    },
+    {
+      "source": "examples/user90m5000t_dry_run.json",
+      "destination": "examples/user90m5000t_dry_run.json"
+    },
+    {
+      "source": "examples/generate_resistance.json",
+      "destination": "examples/generate_resistance.json"
+    },
+    {
+      "source": "tools/package_project.py",
+      "destination": "tools/package_project.py"
+    },
+    {
+      "source": "environment/runtime-spec.json",
+      "destination": "environment/runtime-spec.json"
+    },
+    {
+      "source": "environment/requirements-runtime.txt",
+      "destination": "environment/requirements-runtime.txt"
+    },
+    {
+      "source": "environment/start.ps1",
+      "destination": "environment/start.ps1"
+    },
+    {
+      "source": "environment/constraints.txt",
+      "destination": "environment/constraints.txt"
+    },
+    {
+      "source": "environment/README.md",
+      "destination": "environment/README.md"
+    },
+    {
+      "source": "environment/install-miniforge.ps1",
+      "destination": "environment/install-miniforge.ps1"
+    },
+    {
+      "source": "environment/miniforge-release.txt",
+      "destination": "environment/miniforge-release.txt"
+    },
+    {
+      "source": "environment/original-windows.yml",
+      "destination": "environment/original-windows.yml"
+    },
+    {
+      "source": "environment/start.sh",
+      "destination": "environment/start.sh"
+    },
+    {
+      "source": "environment/bootstrap.py",
+      "destination": "environment/bootstrap.py"
+    },
+    {
+      "source": "environment/doctor.py",
+      "destination": "environment/doctor.py"
+    },
+    {
+      "source": "docs/VALIDATION-v1.0.0.md",
+      "destination": "docs/VALIDATION-v1.0.0.md"
+    },
+    {
+      "source": "docs/migration-dry-runs-v1.0.1.json",
+      "destination": "docs/migration-dry-runs-v1.0.1.json"
+    },
+    {
+      "source": "docs/source-history.bundle",
+      "destination": "docs/source-history.bundle"
+    },
+    {
+      "source": "docs/validation-summary-v1.0.1.json",
+      "destination": "docs/validation-summary-v1.0.1.json"
+    },
+    {
+      "source": "docs/MIGRATION.md",
+      "destination": "docs/MIGRATION-v1.0.1.md"
+    },
+    {
+      "source": "docs/validation-tests.txt",
+      "destination": "docs/validation-tests.txt"
+    },
+    {
+      "source": "docs/validation-tests-v1.0.1.txt",
+      "destination": "docs/validation-tests-v1.0.1.txt"
+    },
+    {
+      "source": "docs/TEST_PROMPTS.md",
+      "destination": "docs/TEST_PROMPTS.md"
+    },
+    {
+      "source": "docs/validation-summary.json",
+      "destination": "docs/validation-summary.json"
+    },
+    {
+      "source": "docs/VALIDATION.md",
+      "destination": "docs/VALIDATION.md"
+    },
+    {
+      "source": "tests/test_workflow.py",
+      "destination": "tests/test_workflow.py"
+    },
+    {
+      "source": "tests/test_bootstrap.py",
+      "destination": "tests/test_bootstrap.py"
+    },
+    {
+      "source": "tests/test_geometry.py",
+      "destination": "tests/test_geometry.py"
+    },
+    {
+      "source": "tests/test_actor_compatibility.py",
+      "destination": "tests/test_actor_compatibility.py"
+    },
+    {
+      "source": "tests/test_contracts.py",
+      "destination": "tests/test_contracts.py"
+    },
+    {
+      "source": "tests/test_cli.py",
+      "destination": "tests/test_cli.py"
+    },
+    {
+      "source": "tests/run_gpu_smoke.py",
+      "destination": "tests/run_gpu_smoke.py"
+    },
+    {
+      "source": "agents/openai.yaml",
+      "destination": "docs/collection-agent-v1.0.1.txt"
+    },
+    {
+      "source": "examples/generated_sample/README.md",
+      "destination": "examples/generated_sample/README.md"
+    },
+    {
+      "source": "examples/generated_sample/DesignCaseShip.csv",
+      "destination": "examples/generated_sample/DesignCaseShip.csv"
+    },
+    {
+      "source": "examples/generated_sample/DesignCaseShip.png",
+      "destination": "examples/generated_sample/DesignCaseShip.png"
+    },
+    {
+      "source": "examples/generated_sample/search_history.csv",
+      "destination": "examples/generated_sample/search_history.csv"
+    },
+    {
+      "source": "examples/generated_sample/DesignCaseShip.html",
+      "destination": "examples/generated_sample/DesignCaseShip.html"
+    },
+    {
+      "source": "examples/generated_sample/sample_result.json",
+      "destination": "examples/generated_sample/sample_result.json"
+    },
+    {
+      "source": "examples/generated_sample/DesignCaseShip.stl",
+      "destination": "examples/generated_sample/DesignCaseShip.stl"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/SKILL.md",
+      "destination": "SKILL.md"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/references/PHYSICS_AND_MODELS.md",
+      "destination": "references/PHYSICS_AND_MODELS.md"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/references/REQUEST_SCHEMA.md",
+      "destination": "references/REQUEST_SCHEMA.md"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/references/OUTPUTS.md",
+      "destination": "references/OUTPUTS.md"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/scripts/hull_explore.py",
+      "destination": "scripts/hull_explore.py"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/agents/openai.yaml",
+      "destination": "agents/openai.yaml"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/scripts/hullexplore/cli.py",
+      "destination": "scripts/hullexplore/cli.py"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/scripts/hullexplore/__init__.py",
+      "destination": "scripts/hullexplore/__init__.py"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/scripts/hullexplore/workflow.py",
+      "destination": "scripts/hullexplore/workflow.py"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/scripts/hullexplore/models.py",
+      "destination": "scripts/hullexplore/models.py"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/scripts/hullexplore/geometry.py",
+      "destination": "scripts/hullexplore/geometry.py"
+    },
+    {
+      "source": "skills/Hullexploration-Skill/scripts/hullexplore/contracts.py",
+      "destination": "scripts/hullexplore/contracts.py"
+    },
+    {
+      "source": "vendor/Predictor/infer_resistance.py",
+      "destination": "vendor/Predictor/infer_resistance.py"
+    },
+    {
+      "source": "vendor/Predictor/hull_resistance_prediction.py",
+      "destination": "vendor/Predictor/hull_resistance_prediction.py"
+    },
+    {
+      "source": "vendor/Predictor/prediction_best.pth",
+      "destination": "vendor/Predictor/prediction_best.pth"
+    },
+    {
+      "source": "vendor/Predictor/cases1.csv",
+      "destination": "vendor/Predictor/cases1.csv"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/infer_ship.py",
+      "destination": "vendor/Hull_RL_Optimization/infer_ship.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/check_setup.py",
+      "destination": "vendor/Hull_RL_Optimization/check_setup.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/train_td3.py",
+      "destination": "vendor/Hull_RL_Optimization/train_td3.py"
+    },
+    {
+      "source": "vendor/Generator/buildship.py",
+      "destination": "vendor/Generator/buildship.py"
+    },
+    {
+      "source": "vendor/Generator/stage2_final.pth",
+      "destination": "vendor/Generator/stage2_final.pth"
+    },
+    {
+      "source": "vendor/Generator/losses.py",
+      "destination": "vendor/Generator/losses.py"
+    },
+    {
+      "source": "vendor/Generator/train_stage2.py",
+      "destination": "vendor/Generator/train_stage2.py"
+    },
+    {
+      "source": "vendor/Generator/utils.py",
+      "destination": "vendor/Generator/utils.py"
+    },
+    {
+      "source": "vendor/Generator/train_stage1.py",
+      "destination": "vendor/Generator/train_stage1.py"
+    },
+    {
+      "source": "vendor/Generator/trainers.py",
+      "destination": "vendor/Generator/trainers.py"
+    },
+    {
+      "source": "vendor/Generator/Test_Supercarrier.py",
+      "destination": "vendor/Generator/Test_Supercarrier.py"
+    },
+    {
+      "source": "vendor/Generator/config.py",
+      "destination": "vendor/Generator/config.py"
+    },
+    {
+      "source": "vendor/Generator/models.py",
+      "destination": "vendor/Generator/models.py"
+    },
+    {
+      "source": "vendor/Generator/datasets.py",
+      "destination": "vendor/Generator/datasets.py"
+    },
+    {
+      "source": "vendor/Predictor/Branchmark/ship1.csv",
+      "destination": "vendor/Predictor/Branchmark/ship1.csv"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/environment.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/environment.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/io_utils.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/io_utils.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/__init__.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/__init__.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/source_loader.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/source_loader.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/trajectory.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/trajectory.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/training.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/training.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/inference.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/inference.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/settings.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/settings.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/hull_rl/backends.py",
+      "destination": "vendor/Hull_RL_Optimization/hull_rl/backends.py"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/configs/train_config.json",
+      "destination": "vendor/Hull_RL_Optimization/configs/train_config.json"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/configs/designs_template.csv",
+      "destination": "vendor/Hull_RL_Optimization/configs/designs_template.csv"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/runs/td3/training_status.json",
+      "destination": "vendor/Hull_RL_Optimization/runs/td3/training_status.json"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/runs/td3/provenance.json",
+      "destination": "vendor/Hull_RL_Optimization/runs/td3/provenance.json"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/runs/td3/resolved_config.json",
+      "destination": "vendor/Hull_RL_Optimization/runs/td3/resolved_config.json"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/runs/td3/models/td3_final.zip",
+      "destination": "vendor/Hull_RL_Optimization/runs/td3/models/td3_final.zip"
+    },
+    {
+      "source": "vendor/Hull_RL_Optimization/runs/td3/tensorboard/td3_1/events.out.tfevents.1787817723.autodl-container-a54d4c9bab-2c26b0c9.13908.0",
+      "destination": "vendor/Hull_RL_Optimization/runs/td3/tensorboard/td3_1/events.out.tfevents.1787817723.autodl-container-a54d4c9bab-2c26b0c9.13908.0"
+    }
+  ],
+  "python_syntax_files": 41,
+  "skill_frontmatter": "Skill is valid!",
+  "model_root": "standalone package root",
+  "active_document_local_links": 43,
+  "dry_runs": [
+    {
+      "request": "generate.json",
+      "original_and_standalone_equal": true,
+      "result": {
+        "status": "validated",
+        "dry_run": true,
+        "mode": "generate",
+        "design": {
+          "length": 90.0,
+          "beam": 15.6,
+          "depth": 7.5,
+          "draft": 3.75,
+          "displacement_volume": 2926.829268292683,
+          "density": 1025.0,
+          "volume_tolerance": 0.05,
+          "displacement_tonnes": 3000.0,
+          "draft_ratio": 0.5,
+          "physical_volume_ratio": 0.2779514974636926,
+          "block_coefficient": 0.5559029949273852,
+          "length_scale_ratio_full_to_model": 30.0,
+          "units": {
+            "length": "m",
+            "beam": "m",
+            "depth": "m",
+            "draft": "m",
+            "displacement_volume": "m^3",
+            "density": "kg/m^3"
+          }
+        },
+        "speed": null,
+        "model_geometry_m": {
+          "length": 3.0,
+          "beam": 0.52,
+          "depth": 0.25,
+          "draft": 0.125
+        },
+        "target_resistance_N": null,
+        "target_operator": null,
+        "warnings": [],
+        "output_directory": null,
+        "files_written": false,
+        "models_loaded": false
+      }
+    },
+    {
+      "request": "generate_resistance.json",
+      "original_and_standalone_equal": true,
+      "result": {
+        "status": "validated",
+        "dry_run": true,
+        "mode": "generate",
+        "design": {
+          "length": 90.0,
+          "beam": 15.6,
+          "depth": 7.5,
+          "draft": 3.75,
+          "displacement_volume": 2926.829268292683,
+          "density": 1025.0,
+          "volume_tolerance": 0.05,
+          "displacement_tonnes": 3000.0,
+          "draft_ratio": 0.5,
+          "physical_volume_ratio": 0.2779514974636926,
+          "block_coefficient": 0.5559029949273852,
+          "length_scale_ratio_full_to_model": 30.0,
+          "units": {
+            "length": "m",
+            "beam": "m",
+            "depth": "m",
+            "draft": "m",
+            "displacement_volume": "m^3",
+            "density": "kg/m^3"
+          }
+        },
+        "speed": {
+          "input_speed": 1.2,
+          "input_speed_unit": "m/s",
+          "input_speed_scale": "model",
+          "model_speed_m_s": 1.2,
+          "model_length_m": 3.0,
+          "full_length_m": 90.0,
+          "length_scale_ratio_full_to_model": 30.0,
+          "conversion": "unit conversion only"
+        },
+        "model_geometry_m": {
+          "length": 3.0,
+          "beam": 0.52,
+          "depth": 0.25,
+          "draft": 0.125
+        },
+        "target_resistance_N": null,
+        "target_operator": null,
+        "warnings": [],
+        "output_directory": null,
+        "files_written": false,
+        "models_loaded": false
+      }
+    },
+    {
+      "request": "optimize.json",
+      "original_and_standalone_equal": true,
+      "result": {
+        "status": "validated",
+        "dry_run": true,
+        "mode": "optimize",
+        "design": {
+          "length": 90.0,
+          "beam": 15.6,
+          "depth": 7.5,
+          "draft": 3.75,
+          "displacement_volume": 2926.829268292683,
+          "density": 1025.0,
+          "volume_tolerance": 0.05,
+          "displacement_tonnes": 3000.0,
+          "draft_ratio": 0.5,
+          "physical_volume_ratio": 0.2779514974636926,
+          "block_coefficient": 0.5559029949273852,
+          "length_scale_ratio_full_to_model": 30.0,
+          "units": {
+            "length": "m",
+            "beam": "m",
+            "depth": "m",
+            "draft": "m",
+            "displacement_volume": "m^3",
+            "density": "kg/m^3"
+          }
+        },
+        "speed": {
+          "input_speed": 1.2,
+          "input_speed_unit": "m/s",
+          "input_speed_scale": "model",
+          "model_speed_m_s": 1.2,
+          "model_length_m": 3.0,
+          "full_length_m": 90.0,
+          "length_scale_ratio_full_to_model": 30.0,
+          "conversion": "unit conversion only"
+        },
+        "model_geometry_m": {
+          "length": 3.0,
+          "beam": 0.52,
+          "depth": 0.25,
+          "draft": 0.125
+        },
+        "target_resistance_N": 15.0,
+        "target_operator": "lt",
+        "warnings": [],
+        "output_directory": null,
+        "files_written": false,
+        "models_loaded": false
+      }
+    },
+    {
+      "request": "predict_benchmark.json",
+      "original_and_standalone_equal": true,
+      "result": {
+        "status": "validated",
+        "dry_run": true,
+        "mode": "predict",
+        "input": {
+          "source_point_cloud": "<PROJECT>/vendor/Predictor/Branchmark/ship1.csv",
+          "source_sha256": "d90a06b0a13dfda1c424576ba1860f7e7c2d137247b706d952f1245da1a16fff",
+          "point_scale": "model",
+          "input_xmax_m": 3.000387,
+          "input_depth_m": 0.294,
+          "draft_ratio": 0.495283019,
+          "coordinate_multiplier_to_model": 0.9998710166388536,
+          "reused_design_metadata": null
+        },
+        "draft_ratio": 0.495283019,
+        "speed": {
+          "input_speed": 0.8,
+          "input_speed_unit": "m/s",
+          "input_speed_scale": "model",
+          "model_speed_m_s": 0.8,
+          "model_length_m": 3.0,
+          "full_length_m": null,
+          "length_scale_ratio_full_to_model": null,
+          "conversion": "unit conversion only"
+        },
+        "model_xmax_m": 3.0,
+        "files_written": false,
+        "models_loaded": false
+      }
+    },
+    {
+      "request": "user90m5000t_dry_run.json",
+      "original_and_standalone_equal": true,
+      "result": {
+        "status": "validated",
+        "dry_run": true,
+        "mode": "optimize",
+        "design": {
+          "length": 90.0,
+          "beam": 15.6,
+          "depth": 7.5,
+          "draft": 5.6,
+          "displacement_volume": 4878.048780487805,
+          "density": 1025.0,
+          "volume_tolerance": 0.05,
+          "displacement_tonnes": 5000.0,
+          "draft_ratio": 0.7466666666666666,
+          "physical_volume_ratio": 0.46325249577282096,
+          "block_coefficient": 0.6204274496957424,
+          "length_scale_ratio_full_to_model": 30.0,
+          "units": {
+            "length": "m",
+            "beam": "m",
+            "depth": "m",
+            "draft": "m",
+            "displacement_volume": "m^3",
+            "density": "kg/m^3"
+          }
+        },
+        "speed": {
+          "input_speed": 18.0,
+          "input_speed_unit": "kn",
+          "input_speed_scale": "full",
+          "model_speed_m_s": 1.690636960832613,
+          "model_length_m": 3.0,
+          "full_length_m": 90.0,
+          "length_scale_ratio_full_to_model": 30.0,
+          "conversion": "Froude similarity"
+        },
+        "model_geometry_m": {
+          "length": 3.0,
+          "beam": 0.52,
+          "depth": 0.25,
+          "draft": 0.18666666666666665
+        },
+        "target_resistance_N": 15.0,
+        "target_operator": "lt",
+        "warnings": [
+          "TD3 extrapolation: T/D=0.746667 is outside the nominal training range [0.35, 0.6]."
+        ],
+        "output_directory": null,
+        "files_written": false,
+        "models_loaded": false
+      }
+    }
+  ],
+  "external_cwd_with_spaces": "passed; caller directory unchanged",
+  "application_version": "1.0.1",
+  "byte_identical_historical_sample_files": [
+    "examples/generated_sample/DesignCaseShip.csv",
+    "examples/generated_sample/DesignCaseShip.png",
+    "examples/generated_sample/search_history.csv",
+    "examples/generated_sample/DesignCaseShip.html",
+    "examples/generated_sample/sample_result.json",
+    "examples/generated_sample/DesignCaseShip.stl"
+  ],
+  "byte_identical_historical_validation_files": [
+    "docs/VALIDATION.md",
+    "docs/VALIDATION-v1.0.0.md",
+    "docs/validation-tests.txt",
+    "docs/validation-tests-v1.0.1.txt",
+    "docs/validation-summary.json",
+    "docs/validation-summary-v1.0.1.json",
+    "docs/migration-dry-runs-v1.0.1.json"
+  ]
+}

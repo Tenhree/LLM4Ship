@@ -1,0 +1,15 @@
+{
+  "mode": "optimize",
+  "length": 90.0,
+  "beam": 15.6,
+  "depth": 7.5,
+  "draft": 5.6,
+  "displacement_tonnes": 5000.0,
+  "density": 1025.0,
+  "speed": 18.0,
+  "speed_unit": "kn",
+  "speed_scale": "full",
+  "target_resistance": 15.0,
+  "seed": 42,
+  "dry_run": true
+}

@@ -1,0 +1,18 @@
+# Prevent the second installation phase from replacing the CUDA PyTorch pair.
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+numpy==2.3.2
+scipy==1.15.1
+pandas==2.2.3
+matplotlib==3.10.5
+plotly==5.24.1
+numpy-stl==3.2.0
+spconv-cu121==2.3.8
+cumm-cu121==0.7.11
+stable-baselines3==2.7.0
+gymnasium==1.2.3
+cloudpickle==3.1.2
+setuptools==80.9.0
+tensorboard==2.18.0
+tqdm==4.67.1
+rich==13.9.4

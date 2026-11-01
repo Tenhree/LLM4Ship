@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "path": "vendor/Generator/stage2_final.pth",
+      "bytes": 131772656,
+      "sha256": "a7a42209dae1c580aea4a9b29b96edcd28265aeaad84b12321fc3b0bcd6d81d3"
+    },
+    {
+      "path": "vendor/Predictor/prediction_best.pth",
+      "bytes": 317996242,
+      "sha256": "729d14baa36b0372aff228c130c2cb600e12a8cf1435eb244e89fbc18a0feeb5"
+    },
+    {
+      "path": "vendor/Hull_RL_Optimization/runs/td3/models/td3_final.zip",
+      "bytes": 3402953,
+      "sha256": "d776176d07df4e4c6eddd689a5f3b7fa0a537f3aba9f4afbb9359610b0c137d7"
+    }
+  ]
+}

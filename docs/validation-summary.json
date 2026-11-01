@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-10-20T15:49:46.606785+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "tests_run": 74,
+  "passed": 73,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_windows_launcher_preserves_arguments_and_callers_cwd (test_bootstrap.BootstrapTests.test_windows_launcher_preserves_arguments_and_callers_cwd)",
+      "reason": "Windows native launcher is checked on the target machine."
+    }
+  ],
+  "versions": {
+    "numpy": "2.3.5",
+    "torch": "2.5.1+cpu",
+    "matplotlib": "3.10.8",
+    "plotly": "5.24.1",
+    "stable-baselines3": "2.7.0",
+    "gymnasium": "1.2.3"
+  },
+  "cuda_available": false,
+  "gpu_inference": "not_run",
+  "windows_native_execution": "not_run"
+}

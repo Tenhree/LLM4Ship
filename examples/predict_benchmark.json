@@ -1,0 +1,9 @@
+{
+  "mode": "predict",
+  "points": "../vendor/Predictor/Branchmark/ship1.csv",
+  "point_scale": "model",
+  "draft_ratio": 0.495283019,
+  "speed": 0.8,
+  "speed_unit": "m/s",
+  "speed_scale": "model"
+}

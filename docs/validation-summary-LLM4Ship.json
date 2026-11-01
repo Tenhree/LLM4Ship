@@ -1,0 +1,55 @@
+{
+  "project": "LLM4Ship",
+  "checked_on": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "validation_type": "Existing standalone unit and regression suite after directory-layout migration",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "working_directory": "/workspace/scratch/65e35f73eb97/llm4ship_refactor/LLM4Ship",
+  "python_version": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "tests_run": 74,
+  "tests_passed": 72,
+  "tests_skipped": 2,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 1.201,
+  "exit_code": 0,
+  "status": "passed_with_documented_skips",
+  "skipped_tests": [
+    {
+      "test": "test_actions_match_sb3_policy_loaded_from_same_real_checkpoint (test_actor_compatibility.SavedActorCompatibility.test_actions_match_sb3_policy_loaded_from_same_real_checkpoint)",
+      "reason": "'PyTorch and Stable-Baselines3 are needed for the real actor comparison'"
+    },
+    {
+      "test": "test_windows_launcher_preserves_arguments_and_callers_cwd (test_bootstrap.BootstrapTests.test_windows_launcher_preserves_arguments_and_callers_cwd)",
+      "reason": "'Windows native launcher is checked on the target machine.'"
+    }
+  ],
+  "dependency_available": {
+    "numpy": true,
+    "matplotlib": true,
+    "torch": false,
+    "stable_baselines3": false
+  },
+  "coverage_preservation": {
+    "original_test_methods": 74,
+    "current_test_methods": 74,
+    "new_behavior_tests_added": 0
+  },
+  "limits": [
+    "Synthetic geometry and explicit test doubles exercise contracts, export checks and workflow selection; scripted resistance values are not trained-model predictions.",
+    "The real saved TD3 actor comparison is skipped when PyTorch or Stable-Baselines3 is unavailable.",
+    "The native Windows launcher test is skipped on this Linux host.",
+    "No real Generator or Predictor inference, CUDA/spconv smoke test, model retraining, or dependency installation is performed by this validation run."
+  ],
+  "log_file": "docs/validation-tests-LLM4Ship.txt"
+}

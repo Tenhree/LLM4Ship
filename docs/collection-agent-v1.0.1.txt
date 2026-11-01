@@ -1,0 +1,4 @@
+interface:
+  display_name: "WhutOceanShip-Skills"
+  short_description: "Explore hull geometry and model-scale resistance"
+  default_prompt: "Use $whutoceanship-skills to explore a hull design from principal dimensions."

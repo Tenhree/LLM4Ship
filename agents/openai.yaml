@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM4Ship"
+  short_description: "Generate hulls and evaluate model-scale resistance"
+  default_prompt: "Use $llm4ship to generate a hull from principal dimensions."

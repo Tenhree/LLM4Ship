@@ -1,0 +1,13 @@
+{
+  "mode": "generate",
+  "length": 90.0,
+  "beam": 15.6,
+  "depth": 7.5,
+  "draft": 3.75,
+  "displacement_tonnes": 3000.0,
+  "density": 1025.0,
+  "speed": 1.2,
+  "speed_unit": "m/s",
+  "speed_scale": "model",
+  "seed": 42
+}

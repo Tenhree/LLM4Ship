@@ -1,0 +1,26 @@
+---
+name: whutoceanship-skills
+description: Coordinate the WhutOceanShip-Skills collection for ship design. Use when the user names WhutOceanShip-Skills or asks to generate an exploratory hull, estimate total resistance from a hull point cloud, or search for a hull below a model-scale resistance target. Accept Chinese and English requests. Hullexploration-Skill is the implemented module; hull demonstration, yacht form design and cabin design are reserved modules.
+---
+
+# WhutOceanShip-Skills
+
+Use this collection in Pi-agent. Version 1.0.1 places all child skills under `skills/`. Respond in the user's language while keeping code, parameter names and persisted technical documentation in English.
+
+## Route the request
+
+| Request | Action |
+| --- | --- |
+| Generate a hull from principal dimensions, draft and displacement | Read [Hullexploration-Skill](skills/Hullexploration-Skill/SKILL.md) and use its generation workflow. |
+| Generate a hull and estimate model-scale total resistance | Read the same skill and use generation with resistance prediction. |
+| Explore a hull subject to a resistance upper target | Read the same skill and use TD3 exploration. |
+| Predict resistance from a supplied half-hull point cloud | Read the same skill and use standalone prediction. |
+| Demonstration, yacht form design or cabin design | Explain that the corresponding directory is reserved and has no executable skill in this release. |
+
+Preserve the full project tree when installing or moving this collection. The four child directories are `skills/Hullexploration-Skill/`, `skills/Hulldemonstration-Skill/`, `skills/Yachtformdesign-Skill/` and `skills/Cabindesign-Skill/`. Only hull exploration contains an implemented skill. The other three directories are empty placeholders. The model weights and original model code are in `vendor/`; the launchers and environment support are at the project root and in `environment/`.
+
+The manifest registers `./SKILL.md` for this collection router and `./skills` for recursive child-skill discovery. Empty directories have no callable skill. Keep the root router and the implemented child available under their existing identifiers, `whutoceanship-skills` and `hullexploration-skill`.
+
+Use `run.cmd` on Windows or `run.sh` from Bash. This collection's `SKILL.md` is at the project root; the hull-exploration directory is two levels below it. Resolve the root launcher from the applicable skill's location and preserve the user's working directory, which determines the default case-output location. Follow the child skill's parameter and result contracts before executing a model.
+
+See [README.md](README.md) for installation, [MIGRATION.md](docs/MIGRATION.md) for upgrading an earlier layout, and [test prompts](docs/TEST_PROMPTS.md) for Chinese and English examples.

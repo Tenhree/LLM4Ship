@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "python": "3.11.10",
+  "pip": "24.3.1",
+  "torch_index": "https://download.pytorch.org/whl/cu121",
+  "package_index": "https://pypi.org/simple",
+  "torch_packages": {
+    "torch": {"version": "2.5.1+cu121", "module": "torch"},
+    "torchvision": {"version": "0.20.1+cu121", "module": "torchvision"}
+  },
+  "packages": {
+    "numpy": {"version": "2.3.2", "module": "numpy"},
+    "scipy": {"version": "1.15.1", "module": "scipy"},
+    "pandas": {"version": "2.2.3", "module": "pandas"},
+    "matplotlib": {"version": "3.10.5", "module": "matplotlib"},
+    "plotly": {"version": "5.24.1", "module": "plotly"},
+    "numpy-stl": {"version": "3.2.0", "module": "stl"},
+    "spconv-cu121": {"version": "2.3.8", "module": "spconv.pytorch"},
+    "cumm-cu121": {"version": "0.7.11", "module": "cumm"},
+    "stable-baselines3": {"version": "2.7.0", "module": "stable_baselines3"},
+    "gymnasium": {"version": "1.2.3", "module": "gymnasium"},
+    "cloudpickle": {"version": "3.1.2", "module": "cloudpickle"},
+    "setuptools": {"version": "80.9.0", "module": null},
+    "tensorboard": {"version": "2.18.0", "module": "tensorboard"},
+    "tqdm": {"version": "4.67.1", "module": "tqdm"},
+    "rich": {"version": "13.9.4", "module": "rich"}
+  }
+}
