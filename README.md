@@ -1,6 +1,7 @@
 # LLM4Ship
+From Design Intent to Validated Hull Forms: An LLM-Based Constraint-Aware Agent for Generative Design and Resistance Optimization  
 
-A standalone Pi-agent skill for exploratory ship hull design. **LLM4Ship, version 1.0.1**, brings the existing hull-exploration instructions, application scripts and reference documents into one project-root skill. It preserves the four design and prediction workflows and the supplied trained models.
+A standalone skill for exploratory ship hull design. **LLM4Ship, version 1.0.0**, brings the existing hull-exploration instructions, application scripts and reference documents into one project-root skill. It preserves the four design and prediction workflows and the supplied trained models.
 
 Skill instructions, new source code and technical documentation are written in English. Users can request work in Chinese or English; Pi interprets the request, supplies structured parameters to the application and responds in the user's language. Quoted Chinese prompts are included as usage examples.
 
